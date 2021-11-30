@@ -1,6 +1,12 @@
 from odoo import fields, models
 
-class ResConfigSettings1(models.TransientModel):
+
+class ResConfigSettings(models.TransientModel):
+
     _inherit = 'res.config.settings'
-    
-    sale_note = fields.Html(related='company_id.sale_note', string="Terms & Conditions", readonly=False)
+
+    default_notes = fields.Html(
+        related='company_id.purchase_note',
+        string="Purchase Terms & Conditions",
+        default_model="purchase.order",
+        readonly=False)
