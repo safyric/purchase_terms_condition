@@ -1,5 +1,5 @@
 {
-    "name": "Terms and Conditionis Format",
+    "name": "Terms and Conditionis for Purchase Order",
     "version": "12.0.1.1",
     "depends": ['base',
                 'purchase_default_terms_conditions'
