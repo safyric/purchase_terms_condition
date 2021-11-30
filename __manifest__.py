@@ -1,7 +1,7 @@
 {
     "name": "Terms and Conditionis for Purchase Order",
     "version": "12.0.1.1",
-    "depends": ['base',
+    "depends": ['purchase',
                 'purchase_default_terms_conditions'
                 ],
     'data': [
