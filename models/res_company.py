@@ -1,6 +1,9 @@
 from odoo import fields, models
 
-class ResCompany1(models.Model):
-    _inherit = "res.company"
+class ResCompany(models.Model):
 
-    sale_note = fields.Html(string='Default Terms and Conditions', translate=True)
+    _inherit = 'res.company'
+
+    purchase_note = fields.Html(
+        string='Purchase Default Terms and Conditions',
+        translate=True)
